@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+	        // using literal //stored in string pool //allow duplication //faster
+		String str1="hello";
+		//using keyword //stored in heap memory //prevent duplication //slower
+		String str2=new String("world");
+		System.out.println(str1.concat(" "+str2));
+		System.out.println(str1 == str2);
+	}
+}

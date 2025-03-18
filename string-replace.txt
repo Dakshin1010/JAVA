@@ -1,0 +1,7 @@
+public class Main{
+    public static void main (String[] args) {
+        String str="dakshin ravi";
+        
+        System.out.println(str.replace('a','x'));
+    }
+}

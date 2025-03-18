@@ -1,0 +1,8 @@
+public class Main{
+    public static void main (String[] args) {
+        String str="dakshin ravi";
+        
+        System.out.println("Substring from index8:"+str.substring(8));
+        System.out.println("Substring from index0to7:"+str.substring(0,7));
+    }
+}

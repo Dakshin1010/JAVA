@@ -1,0 +1,9 @@
+public class Main{
+    public static void main (String[] args) {
+        String str=" DAKSHIN RAVI ";
+        
+        System.out.println("Before trim:["+str+"]");
+        
+        System.out.println("After trim:["+str.trim()+"]");
+    }
+}

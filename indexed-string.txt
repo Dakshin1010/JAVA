@@ -1,0 +1,8 @@
+public class Main{
+    public static void main (String[] args) {
+        String str="dakshin ravi";
+        
+        System.out.println("index of'ravi':"+str.indexOf("ravi"));
+        System.out.println("index of'z':"+str.indexOf('z'));
+    }
+}
