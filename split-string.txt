@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        String numberStr = "123,456,789";
+
+        String[] numbers = numberStr.split(",");
+
+        for (String num : numbers) {
+            System.out.println(num);
+        }
+    }
+}
