@@ -1,0 +1,47 @@
+important method of string-builder:
+
+1. append(String str): adds a string at the end.
+2. insert(int offset,String str): insert a string at the specified position
+3. replace(int start,int end,String str): replace characters within a range
+4. reverse(): reverse the string
+
+string buffer is synchronized, used with safety threads.
+string builder is not-synchronized, may be crashed at any time
+
+1:append(String str):
+    
+   public class Main{
+    public static void main (String[] args) {
+        StringBuffer str= new StringBuffer("dakshin");
+        str.append(" ravi");
+        System.out.println(str);
+    }
+}
+
+2:insert(int offset,String str):
+
+   public class Main{
+    public static void main (String[] args) {
+        StringBuffer str= new StringBuffer("dakshin");
+         str.insert(7,"-");
+        str.append("ravi");
+        System.out.println(str);
+    }
+}
+
+3. replace(int start,int end,String str):
+
+     public class Main{
+    public static void main (String[] args) {
+        StringBuffer str= new StringBuffer("dakshin");
+         str.insert(7,"-");
+        str.append("ravi");
+        str.replace(8,12,"java");
+        System.out.println(str);
+    
+    }
+}
+
+
+
+   
