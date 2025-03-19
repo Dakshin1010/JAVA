@@ -1,0 +1,35 @@
+class static--access-->(classname.static-variable/static-method)  
+class non-static--acces--> using object
+
+example:
+
+class Main{
+    public static void main(String[] args){
+        
+    //non-static//using oject
+    Objectoriented ref=new Objectoriented();
+    System.out.println(ref.name);
+    System.out.println(ref.rollno);
+    
+    //static member
+    System.out.println(Objectoriented.a);
+    Objectoriented.Disply();
+   }
+}
+
+class Objectoriented{
+    
+    //non-static members
+    String name="Dakshin";
+    String rollno="2332j04";
+    
+    //static members
+    
+    static int a = 10;
+    static int b = 20;
+    
+    public static void Disply(){
+    System.out.println("static member");
+    
+    }
+}
