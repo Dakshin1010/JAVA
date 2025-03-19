@@ -4,7 +4,7 @@ java has two classes-(logic & execution)
 
 CLASS: 
 
-   Class is a blue-print of java
+   Class is a blue-print of java (for creating object)
 
    it contains states & behaviour
 
