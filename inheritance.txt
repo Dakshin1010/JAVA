@@ -1,0 +1,6 @@
+INHERITANCE:
+  one class derived in another class
+
+  inheritance is a mechanism in java where one class acquires the properties and behaviour of another class
+
+  it promotes code reusability and a hierarchical class structure
