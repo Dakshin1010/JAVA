@@ -1,0 +1,21 @@
+
+
+java has two classes-(logic & execution)
+
+CLASS: 
+
+   Class is a blue-print of java
+
+   it contains states & behaviour
+
+   states refers to data member
+
+   behaviour refers to member function
+
+   java has two classes-(logic & execution)
+
+OBJECT:
+
+   OBJECT-real world entity
+  
+   that have its own states & behaviour
