@@ -1,6 +1,17 @@
 INHERITANCE:
   one class derived in another class
-
   inheritance is a mechanism in java where one class acquires the properties and behaviour of another class
-
   it promotes code reusability and a hierarchical class structure
+
+key features:
+  super-class: class whose properties and inherited.
+  sub class: class that inherits properties and methods.
+  extends keyword: used to establish inheritance.
+  reusability: common functionality is written once in the superclass and reuse in subclass.
+
+TYPES:
+ single inheritance.
+ multi-level inheritance.
+ hierarchial inheritance.
+ multiple inheritance.
+ hybrid inheritance.
