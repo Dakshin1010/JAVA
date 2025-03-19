@@ -14,6 +14,8 @@ CLASS:
 
    java has two classes-(logic & execution)
 
+{class static-access-->(classname.staticvariable/ststicmethod)  }
+
 OBJECT:
 
    OBJECT-real world entity
