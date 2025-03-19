@@ -14,7 +14,8 @@ CLASS:
 
    java has two classes-(logic & execution)
 
-{class static-access-->(classname.staticvariable/ststicmethod)  }
+class static-access-->(classname.staticvariable/ststicmethod)  
+class non-static-acces--> using object
 
 OBJECT:
 
