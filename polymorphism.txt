@@ -1,0 +1,54 @@
+POLYMORPHISM:
+
+  -Polymorphism in java refers to the ability of a single action to behave differently based on the context.
+
+  -it enables objects of different classes to be treated as object of a common
+
+TYPES:
+
+1. compile-time polymorphism(static):
+
+   -achived through methid overloading.
+   -resolved through compliaton.
+
+2.run-time polymorphim(dynamic):
+
+  -achived through methid overriding.
+  -resolved runtime based on the object type.
+
+
+method overloading- same method name but different in their arguments.
+
+example:
+
+package payment;
+
+class Topayvia{
+	void pay(int amount) {
+		System.out.println("in hand amount:"+amount);
+	}
+}
+class CreaditUpi extends Topayvia{
+	void pay(int amount) {
+		System.out.println("Upipayment:"+amount);
+	}
+}
+
+	class Gpay extends Topayvia{
+		void pay(int amount) {
+			System.out.println("Gpay:"+amount);
+		}
+
+}
+public class payment {
+	public static void main(String[] args) {
+		Topayvia ref;
+                Topayvia p=new Topayvia();
+		p.pay(10000);
+		ref=new CreaditUpi();
+		ref.pay(2000);
+		ref=new Gpay();
+		ref.pay(3000);
+	}
+		
+	}
