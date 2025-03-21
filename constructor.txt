@@ -1,0 +1,57 @@
+CONSTRUCTOR:
+
+  
+  special method or member function 
+
+  must have same name as that of class name
+
+  constructor does not allow access modifiers and also return type
+
+
+example:
+
+class Main{
+    
+    public static void main(String[] args){
+      
+     Sample ref=new Sample();   
+   }
+}
+
+class Sample{
+    
+    //default constructor
+    Sample(){
+    System.out.println("default constructor");
+    
+    }
+    
+}  
+
+example 2:
+
+class Main{
+    
+    public static void main(String[] args){
+      
+     Sample ref=new Sample("BMW","M8"); 
+     System.out.println(ref.carname);
+     System.out.println(ref.carmodel);
+   }
+}
+
+class Sample{
+    
+    String carname;
+    String carmodel;
+    
+    //default constructor
+    Sample(String carname,String carmodel){
+    this.carname=carname;
+    this.carmodel=carmodel;
+        
+    System.out.println("default constructor");
+    
+    }
+    
+}
