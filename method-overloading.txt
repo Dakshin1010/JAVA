@@ -1,0 +1,35 @@
+METHOD-OVERLOADING:
+   In Java, method overriding allows a subclass to provide a specific implementation of a method
+that is already defined in its parent class, enabling runtime polymorphism
+
+
+EXAMPLE:
+
+package employeesalary;
+
+class Employeesalary{
+	
+	void calculatesalary(int fulltime_salary) {
+		System.out.println("full-time salary :"+fulltime_salary);
+	}
+	
+	void calculatesalary(int hours_worked, double hourly_rate) {
+		double parttime_salary=hours_worked*hourly_rate;
+		System.out.println("part-time salary :"+parttime_salary);
+	}
+	void calculatesalary(int hours_worked, double hourly_rate,int bonus) {
+		double freelancer_salary=hours_worked*hourly_rate+bonus;
+		System.out.println("freelancer salary :"+freelancer_salary);
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		Employeesalary salary=new Employeesalary();
+		salary.calculatesalary(5000);
+		salary.calculatesalary(20,20.5);
+		salary.calculatesalary(20,20,100);
+	}
+
+}
