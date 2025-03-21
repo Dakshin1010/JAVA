@@ -1,0 +1,54 @@
+ABSTRACTION:
+
+-abstraction is the process of hiding implementation details and showing only the essential features of an object.
+
+
+->key features of abstraction:
+
+ -implemented using abstarct classes and interfaces in java
+
+ -abstract method does not have body
+
+ -hepls focus on "what an object does" rather than "how it does it".  
+
+-->important:
+   
+  -if you know the implementation partially, use an abstract class.
+  -if you don't know the implementation at all, use an interface.
+
+example:
+
+    //abstract class
+   abstract class Animal{
+    //Abstract method(no implementation)
+   abstract void sound();
+
+   //Regular method
+   void sleep(){
+   system.out.println("sleeping..");
+   }
+  }
+
+example 2:
+
+package Vehicle;
+
+abstract class Vehicles{
+	abstract void Startsusing();
+}
+
+class Bike extends Vehicles{
+  void Startsusing() {
+	System.out.println("Bike start with kick");
+}
+}
+
+
+public class Vehicle{
+
+	public static void main(String[] args) {
+	Vehicles ref=new Bike(); 
+	ref.Startsusing();
+	}
+}
+
