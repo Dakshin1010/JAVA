@@ -1,0 +1,61 @@
+INTERFACE:
+
+   only public, static, final (constants) variables are allowed.
+   all interface methods are public & abstract by default.
+
+when to use an interface?
+
+ -when multiple classes need a common behaviour.
+ -when you want to achieve full abstraction.
+ -when you want to decouple dependencies between componenets.
+
+SYNTAX:
+
+ interface interface_name{
+
+      //variable
+      static datatype variablename = value; 
+      final datatype variablename = value;
+
+      //method
+      default void methodname(){
+
+      }
+      abstract void methodname(){
+
+      }
+}
+
+
+EXAMPLE:
+
+package interface1;
+
+interface Superclass1{
+ void sending();
+
+}
+
+interface Superclass2{
+	 void sended();
+		
+}
+
+class Subclass implements Superclass1,Superclass2{
+	public void sending() {
+		System.out.println("Superclass1");
+	}
+	public void sended() {
+		System.out.println("Superclass2");
+	}
+}
+
+public class main {
+
+	public static void main(String[] args) {
+		Subclass s=new Subclass();
+		s.sending();
+		s.sended();
+
+   }
+}
