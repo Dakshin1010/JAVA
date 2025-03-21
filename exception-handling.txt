@@ -1,0 +1,39 @@
+EXCEPTION HANDLING:
+
+  -exception handling is a mechanism to handle runtime errors in java,
+ensuring the program can recover or provide meaningful error messages.
+  
+  -it uses try, catch, throw, throws, and finally keywords to manage exceptions.
+
+
+KEY CONCEPTS:
+
+-EXCEPTION CLASSES:
+   
+   Exception : Checked exceptions that must be declared or handled explicity(e.g., IOException).
+   Runtime Exception: Unchecked exceptions(e.g., NullPointerException).
+
+KEYWORDS:
+
+  -try: block of code where exceptions might occur.
+  -catch: block to handle exceptions.
+  -throw: explicity throws an exception.
+  -throws: declares exeptions that a method might throw.
+  -finally: block that executes regardless of whether an exception occurred or not.
+
+
+EXAMPLE:
+
+public class Main
+{
+	public static void main(String[] args) {
+	    try{
+	        int num=10/0;
+	    }
+	    catch(ArithmeticException e){
+	    System.out.println("cannot divided by zero:"+e.getMessage());    
+	    }finally{
+	        System.out.println("execution completed");
+	    }
+	}
+}
